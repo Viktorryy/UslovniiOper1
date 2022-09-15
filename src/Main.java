@@ -2,17 +2,28 @@ public class Main {
     public static void main(String[] args) {
 
         // Домашнее задание - 3
-        //Задание 2
+        //Задание 3
 
-        int age = 66;
-        // описание возрастных ограничений
-        boolean age0 = age < 5; // кататься нельзя
-        boolean age1 = age >=5 && age < 14; // кататься только в сопровождении взрослого
-        boolean age2 = age >=14; // кататься без сопровождения взрослого.
+        int one = 15;
+        int two = 88;
+        int free = 5;
 
-        if (age0) {System.out.println("Вам "+  age + " года, кататься на аттракционе нельзя");}
-        if (age1) {System.out.println("Вам "+  age + " лет, можно кататься только в сопровождении взрослого");}
-        if (age2) {System.out.println("Вам "+  age + " лет, можно кататься без сопровождения взрослого");}
+        boolean oneMore = one > two && one > free;
+        boolean twoMore = two > one && two > free;
+        boolean freeMore = free > one && free > two;
 
+        if (oneMore || twoMore || freeMore) {
+
+            if (oneMore) {
+                System.out.println("Самое большое число первое " + one);
             }
+            if (twoMore) {
+                System.out.println("Самое большое число второе " + two);
+            }
+            if (freeMore) {
+                System.out.println("Самое большое число третье " + free);
+            }
+        }
+        else {System.out.println("В условии самое большое число повторяется на разных позициях");}
+    }
 }
