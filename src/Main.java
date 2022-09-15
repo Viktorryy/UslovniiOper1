@@ -2,21 +2,17 @@ public class Main {
     public static void main(String[] args) {
 
         // Домашнее задание - 3
-        //Задание 1
+        //Задание 2
 
-        float age =(float) 1;
-        boolean ageDetSad = age >=2 && age < 7; // Возраст для детского сада
-        boolean ageSchool = age >=7 && age < 19; // Возраст для школы
-        boolean ageUniver = age >=19 && age < 25; // Возраст для университета
-        boolean ageWork = age >=25;  // Возраст для работы
-        boolean ageMl = age <2;  // Возраст для дома
+        int age = 66;
+        // описание возрастных ограничений
+        boolean age0 = age < 5; // кататься нельзя
+        boolean age1 = age >=5 && age < 14; // кататься только в сопровождении взрослого
+        boolean age2 = age >=14; // кататься без сопровождения взрослого.
 
-
-        if (ageDetSad) {System.out.println("Если возраст человека равен "+  age + " ,то ему нужно ходить в детский сад");}
-        if (ageSchool) {System.out.println("Если возраст человека равен "+  age + " ,то ему нужно ходить в школу");}
-        if (ageUniver) {System.out.println("Если возраст человека равен "+  age + " ,то ему нужно ходить в университет");}
-        if (ageWork) {System.out.println("Если возраст человека равен "+  age + " ,то ему нужно ходить на работу!!");}
-        if (ageMl) {System.out.println("Если возраст человека равен "+  age + " ,то Сиди дома с мамой!!");}
+        if (age0) {System.out.println("Вам "+  age + " года, кататься на аттракционе нельзя");}
+        if (age1) {System.out.println("Вам "+  age + " лет, можно кататься только в сопровождении взрослого");}
+        if (age2) {System.out.println("Вам "+  age + " лет, можно кататься без сопровождения взрослого");}
 
             }
 }
